@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <style>
+        * {
+            background-color: #ffbb5a;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #container_{
+            height: 150px;
+            width: 200px;
+            justify-content: space-between;
+            display: flex;
+            position: absolute;
+            left: 40%;
+            top: 28%;
+            align-content: center;
+        }
+        .game--{
+            font-size: 100px;
+            border: none;
+        }
+        #stop_container{
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            left: 48%;
+            top: 63%;
+        }
+        #stop_{
+            
+            font-size: 100px;
+            border: none;
+        }
+        #result_{
+            display: inline-flex;
+            text-align: center;
+        }
+        #result_div{
+            width: 800px;
+            height: 100px;
+            position: absolute;
+            left: 34%;
+            top: 50%;
+            font: Trebuchet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            align-content: center;
+        }
+        td{
+            text-align: center;
+        }
+        th{
+            font: serif;
+            border: 2px solid black;
+        }
+        table{
+            border: 3px solid black;
+        }
+        #heading_{
+            font-size: 35px;
+            font: Verdana;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #heading_container{
+            position: absolute;
+            justify-content: center;
+            left: 42%;
+            top: -3%;
+        }
+        #result_1{
+            position: absolute;
+            left: 46%;
+            top:15%;
+            width: 300px;
+            height: 60px;
+            align-content: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="heading_container"><p id="heading_">Rock Paper scissor</p></div>
+    <div id="container_">
+        <div><button id="paper_" class="game--" value="paper" onclick="main()">&#9995;</button></div>
+        <div><button id="scissor_"class="game--" value="scissor"onclick="main()">&#9996;</button></div>
+        <div><button id="rock_" class="game--" value="rock" onclick="main()">&#9994;</button></div>
+    </div>
+    <div id="result_div"><p id="result_"></p></div>
+    <div id="stop_container"><button id="stop_" class="stop--" onclick="reset()">&#128721;</button></div>
+    <table>
+        <tr>
+            <th>Player Score</th>
+            <th>Computer Score</th>
+        </tr>
+        <tr>
+            <td id="player_score">0</td>
+            <td id="computer_score">0</td>
+        </tr>
+    </table>
+    <div id="result_1"><p id="result1"></p></div>
+    <script src="practiceRockPaperScissor.js"></script>
+</body>
+</html>
